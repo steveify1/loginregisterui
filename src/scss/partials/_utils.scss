@@ -35,7 +35,8 @@ body::-webkit-scrollbar-thumb {
 a,
 .btn {
 	font-family: $secondaryFont;
-	@include textFontSize();
+    @include textFontSize();
+    cursor: pointer;
 }
 
 a {

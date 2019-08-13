@@ -13,10 +13,16 @@
 <body>
     <div id="wrapper">
         <header class="flex  flex-row">
-            <h1 class="company-logo">Divasity<sup>TM</sup></h1>
+            <h1 class="company-logo">Divasity</h1>
             <nav id="main-nav">
                 <ul class="menu-items">
-                    <li class="menu-item"><a href="/">Nigeria</a></li>
+                    <!-- <li class="menu-item"><a href="/">Nigeria</a></li> -->
+                    <div id="client-country-wrapper" class="flex">
+                        <div class="client-country-flag">
+                            <i class="fa fa-map"></i>
+                        </div>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -27,11 +33,13 @@
                 <form action="" class="form">
                     <div class="input-group">
                         <div class="form-group">
-                            <input type="text" class="form-control"id="username" name="username" placeholder="username">
+                            <input type="text" class="form-control" id="username" name="username"
+                                placeholder="username">
                             <label for="username"><i class="fa fa-user"></i></label>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control"id="password" name="password" placeholder="password">
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="password">
                             <label for="password"><i class="fa fa-key"></i></label>
                         </div>
                     </div>
@@ -41,8 +49,10 @@
                 <a class="text link" data-forgot-password>Forgot Password?</a>
 
                 <div class="social-login-options grid">
-                    <span class="social-login btn-sm grid"><i class="fa fa-facebook"></i><span>Login with Facebook</span></span>
-                    <span class="social-login btn-sm grid"><i class="fa fa-envelope"></i><span>Login with Email</span></span>
+                    <span class="social-login btn-sm grid"><i class="fa fa-facebook"></i><span>Login with
+                            Facebook</span></span>
+                    <span class="social-login btn-sm grid"><i class="fa fa-envelope"></i><span>Login with
+                            Email</span></span>
                 </div>
 
                 <div class="divide-line flex flex-row">

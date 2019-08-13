@@ -1,4 +1,4 @@
-// @import 'partials/reset';
+@import 'partials/reset';
 @import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/utils';
@@ -31,10 +31,6 @@ header {
         font-weight: 600;
         font-size: 1.4rem;
         color: $secondaryColor;
-        
-        sup {
-            font-size: 40%;
-        }
     }
 
     #main-nav {
@@ -44,6 +40,26 @@ header {
                     color: $white;
                 }
             }
+        }
+    }
+
+    #client-country-wrapper {
+        background-color: $white;
+        padding: 0.3em;
+        @include borderRadius(5px);
+
+        .client-country-flag {
+            margin-right: 0.2em;
+
+            i {
+                color: green;
+            }
+        }
+
+        i[class*="caret"] {
+            color: $gray;
+            margin-right: 0.4em;
+            cursor: pointer;
         }
     }
 
@@ -60,6 +76,11 @@ header {
     border-bottom: 1px solid $white;
     padding: 2em 0;
     // background-color: pink;
+
+    .btn:hover,
+    a:hover {
+        opacity: 0.856;
+    }
 
     .form-container {
         height: 100%;
@@ -91,6 +112,7 @@ header {
             .form-group {
                 border: 2px solid $white;
                 position: relative;
+
                 &:first-child {
                     margin-bottom: 3em;
                 }
@@ -173,9 +195,10 @@ header {
         }
 
         .divide-line {
-            margin: 2em 0;
+            margin: 1.5em 0;
             position: relative;
             width: 100%;
+
             p {
                 @include circle(40px);
                 margin: auto;
@@ -187,6 +210,7 @@ header {
                 left: 50%;
                 @include transform(translate(-50%, -50%));
             }
+
             .hline {
                 content: "";
                 height: 1px;
@@ -197,7 +221,9 @@ header {
 
         .create-account-link {
             text-transform: uppercase;
-            font-weight: 600;
+            font-size: calc(0.75rem + 0.1vw);
+            font-weight: 900;
+            padding: 1.3em 0;
         }
 
         @media screen and (min-width: 768px) {
@@ -218,6 +244,7 @@ footer {
     .privacy-and-tou {
         justify-content: center;
         @include alignItems(center);
+
         .vline {
             height: 40px;
             width: 1px;
