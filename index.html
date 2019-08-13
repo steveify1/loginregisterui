@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Divasity</title>
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="flex  flex-row">
+            <h1 class="company-logo">Divasity<sup>TM</sup></h1>
+            <nav id="main-nav">
+                <ul class="menu-items">
+                    <li class="menu-item"><a href="/">Nigeria</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="login-container" class="flex flex-column">
+            <!-- <img src="./Mock Up/Login and sign up/WhatsApp_Image_2019-08-01_at_7.20.07_PM(1).jpeg" alt=""> -->
+            <div class="form-container flex flex-column">
+                <form action="" class="form">
+                    <div class="input-group">
+                        <div class="form-group">
+                            <input type="text" class="form-control"id="username" name="username" placeholder="username">
+                            <label for="username"><i class="fa fa-user"></i></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control"id="password" name="password" placeholder="password">
+                            <label for="password"><i class="fa fa-key"></i></label>
+                        </div>
+                    </div>
+                    <input class="btn btn-full-width" type="submit" value="Log In">
+                </form>
+
+                <a class="text link" data-forgot-password>Forgot Password?</a>
+
+                <div class="social-login-options grid">
+                    <span class="social-login btn-sm grid"><i class="fa fa-facebook"></i><span>Login with Facebook</span></span>
+                    <span class="social-login btn-sm grid"><i class="fa fa-envelope"></i><span>Login with Email</span></span>
+                </div>
+
+                <div class="divide-line flex flex-row">
+                    <span class="hline"></span>
+                    <p class="flex flex-column">OR</p>
+                </div>
+
+                <a href="register.html" class="btn btn-full-width create-account-link">create an account</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="privacy-and-tou flex">
+                <a href="terms-of-use.html" class="tou">terms of use</a>
+                <div class="vline"></div>
+                <a href="privacy.html" class="privacy">privacy policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./dist/app.build.js"></script>
+</body>
+
+</html>
