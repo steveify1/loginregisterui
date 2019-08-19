@@ -3,3 +3,4 @@ dist
 Mock Up
 src/font-awesome-4.7.0
 src/img
+/*\.jpg|\.jpeg|\.png|\.pdf/

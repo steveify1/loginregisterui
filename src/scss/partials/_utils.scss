@@ -3,9 +3,23 @@
 * {
 	margin: 0;
 	padding: 0;
-    @include boxSizing(border-box);
+	@include boxSizing(border-box);
 	scroll-behavior: smooth;
 	// @include transition(all 1s ease);
+
+
+	&::-webkit-scrollbar {
+		width: 0.5em;
+		&-track {
+			background-color: $white;
+		}
+	
+		&-thumb {
+			background-color: $pink;
+			@include borderRadius(10px);
+		}
+	}
+
 }
 
 body {
@@ -19,24 +33,11 @@ body {
 	max-width: 100vw;
 }
 
-body::-webkit-scrollbar {
-	width: 0.5em;
-}
-
-body::-webkit-scrollbar-track {
-	background-color: white;
-}
-
-body::-webkit-scrollbar-thumb {
-	background-color: $pink;
-	@include borderRadius(10px);
-}
-
 a,
 .btn {
 	font-family: $secondaryFont;
-    @include textFontSize();
-    cursor: pointer;
+	@include textFontSize();
+	cursor: pointer;
 }
 
 a {
@@ -52,14 +53,14 @@ a {
 	border: none;
 	outline: none;
 	cursor: pointer;
-    text-transform: capitalize;
-    text-align: center;
+	text-transform: capitalize;
+	text-align: center;
 	@include borderRadius(10px);
 	padding: 0.8em 1.3em;
 	width: fit-content;
 	color: $white;
-    background: $accent;
-    @include textFontSize();
+	background: $accent;
+	@include textFontSize();
 }
 
 .btn.btn-full-width {
@@ -86,27 +87,25 @@ form.form {
 
 	.form-group {
 		margin-bottom: 1em;
-		color: $gray;
 		@include flex();
 		@include flexDirection(column);
 
 		label {
 			margin-bottom: 0.5em;
 			@include textFontSize();
-			color: $gray;
 		}
 
 		input,
 		select,
 		option,
 		textarea {
-            font-family: $tertiaryFont;
+			font-family: $tertiaryFont;
 			padding: 0.5em 0.3em;
 			border: 1px solid rgba(0, 0, 0, 0.3);
 			background: none;
 			font-weight: normal;
-            color: $offWhite;
-            letter-spacing: 1.5px;
+			color: $offWhite;
+			letter-spacing: 1.5px;
 
 			&:focus {
 				outline-color: lighten($color: $tertiaryColor, $amount: 3)
@@ -114,9 +113,9 @@ form.form {
 		}
 
 		input::placeholder {
-            color: transparentize($color: $white, $amount: 0.05);
-            font-size: 0.75rem;
-            line-height: 0.75rem;
+			color: transparentize($color: $white, $amount: 0.05);
+			font-size: 0.75rem;
+			line-height: 0.75rem;
 		}
 	}
 
@@ -164,7 +163,7 @@ ul {
 	font-size: 0.9rem;
 	line-height: 1rem;
 	font-weight: 600;
-	margin-bottom: 0.875em;
+	margin-bottom: 0.75em;
 
 	@media screen and (min-width: 576px) {
 		font-size: 1.1rem;
@@ -176,12 +175,6 @@ ul {
 		font-size: 1.2rem;
 		line-height: 1.2rem;
 		font-weight: 600;
-	}
-
-	@media screen and (min-width: 900px) {
-		// font-size: 1.8rem;
-		// line-height: 1.8rem;
-		// font-weight: 600;
 	}
 }
 
@@ -226,22 +219,22 @@ ul {
 
 /* ****** Global Grid Style ****** */
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .flex {
-    @include flex;
+	@include flex();
 }
 
 .flex-row {
-    @include flexDirection(row);
+	@include flexDirection(row);
 }
 
 .flex-column {
-    @include flexDirection(column);
+	@include flexDirection(column);
 }
 
 /* ****** Global Grid Style ****** */
 .grid {
-    @include grid;
+	@include grid();
 }

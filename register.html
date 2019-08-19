@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Divasity - Register</title>
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="flex  flex-row">
+            <a href="/"><h1 class="company-logo">Divasity</h1></a>
+            <nav id="main-nav">
+                <ul class="menu-items">
+                    <!-- <li class="menu-item"><a href="/">Nigeria</a></li> -->
+                    <div id="client-country-wrapper" class="flex">
+                        <div class="client-country-flag">
+                            <i class="fa fa-map"></i>
+                        </div>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="signup-container" class="flex flex-column">
+            <!-- <img src="./Mock Up/Login and sign up/WhatsApp_Image_2019-08-01_at_7.20.07_PM(1).jpeg" alt=""> -->
+        
+            <div class="form-container">
+                <h1 class="title">Welcome to Divasity</h1>
+
+                <div class="tab-controls grid">
+                    <div class="tab-control active" data-target="vendor-reg">vendor</div>
+                    <div class="tab-control" data-target="customer-reg">customer</div>
+                </div>
+
+                <div class="tabs">
+                    <form id="vendor-reg" action="" class="form tab active">
+                        <div class="input-group">
+                            <div class="form-group">
+                                <label for="fullname">full name</label>
+                                <input type="text" class="form-control" id="fullname" name="fullname">
+                            </div>
+                            <div class="form-group">
+                                <label for="brandname">vendor or brand name</label>
+                                <input type="text" class="form-control" id="brandname" name="brandname">
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" class="form-control" id="username" name="username"
+                                    placeholder="username">
+                            </div> -->
+                            <div class="form-group">
+                                <label for="email">email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">phone number</label>
+                                <input type="number" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">password</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="cpassword">confirm password</label>
+                                <input type="cpassword" class="form-control" id="cpassword" name="cpassword">
+                            </div>
+                        </div>
+                        <div class="form-grou accept-t-and-c grid">
+                            <input type="checkbox" class="form-control" id="accept-terms" name="accept-terms">
+                            <label for="accept-terms">I agree to the terms and condition of <span>Divasity</span></label>   
+                        </div>
+    
+    
+                        <input class="btn btn-full-width" type="submit" value="Sign Up">
+                        
+                        <p class="text">Already have an account? <a href="/" class="link" data-forgot-password>Sign in.</a></p>
+                    </form>
+    
+                    <form id="customer-reg" action="" class="form tab">
+                        <div class="input-group">
+                            <!-- <div class="form-group">
+                                <label for="username">username</label>
+                                <input type="text" class="form-control" id="username" name="username"
+                                    placeholder="username">
+                            </div> -->
+                            <div class="form-group">
+                                <label for="email">email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">password</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="cpassword">confirm password</label>
+                                <input type="cpassword" class="form-control" id="cpassword" name="cpassword">
+                            </div>
+                        </div>
+    
+    
+                        <input class="btn btn-full-width" type="submit" value="Sign Up">
+
+                        <p class="text">Already have an account? <a href="/" class="link" data-forgot-password>Sign in.</a></p>
+                    </form>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="privacy-and-tou flex">
+                <a href="terms-of-use.html" class="tou">terms of use</a>
+                <div class="vline"></div>
+                <a href="privacy.html" class="privacy">privacy policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./dist/app.build.js"></script>
+</body>
+
+</html>

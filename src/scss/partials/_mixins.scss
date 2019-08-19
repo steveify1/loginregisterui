@@ -145,12 +145,12 @@
 }
 
 
-@mixin textFontSize {
-    font-size: $textFS;
-    line-height: $textFS;
+@mixin textFontSize($size: $textFS, $sizeLG: 1.1rem) {
+    font-size: $size;
+    line-height: calc($size + 40px);
 
     @media screen and (min-width: 768px) {
-        font-size: 1.1rem;
-        line-height: 1.1rem;
+        font-size: $sizeLG;
+        line-height: $sizeLG;
     }
 }
