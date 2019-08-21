@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 /*
 Sass Reset - Converted by Hampton Catlin
 A modification of the original found at...
@@ -640,7 +641,7 @@ header #client-country-wrapper i[class*=caret] {
   opacity: 0.856;
 }
 #signup-container .form-container {
-  height: 100vh;
+  min-height: 100vh;
 }
 #signup-container .form-container .input-group,
 #signup-container .form-container .input[type=submit] {
@@ -666,7 +667,7 @@ header #client-country-wrapper i[class*=caret] {
   overflow: hidden;
 }
 #signup-container .form-container .tab-controls .tab-control {
-  padding: 0.5em 0;
+  padding: 0.5em;
   background-color: #fff;
   color: #e47230;
   text-transform: uppercase;
@@ -691,11 +692,8 @@ header #client-country-wrapper i[class*=caret] {
   -khtml-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
 }
-#signup-container .form-container .tabs {
-  position: relative;
-}
 #signup-container .form-container .tabs .tab {
-  z-index: -1;
+  width: 100%;
   opacity: 0;
   display: none;
 }
@@ -706,12 +704,6 @@ header #client-country-wrapper i[class*=caret] {
 }
 #signup-container .form-container .tabs .tab.active .input-group {
   background-color: #e47230;
-}
-#signup-container .form-container .form {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 #signup-container .form-container .form > p {
   margin-top: 0.5em;
@@ -871,20 +863,19 @@ header #client-country-wrapper i[class*=caret] {
 #login-container .form-container .social-login-options {
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2%;
+  grid-column-gap: 1%;
 }
 #login-container .form-container .social-login-options .social-login {
   width: 100%;
   padding: 0.3em;
   text-align: center;
   font-size: calc(0.6rem + 0.1vw);
-  grid-template-columns: 2% 96%;
-  grid-column-gap: 2%;
+  grid-template-columns: 5% 95%;
+  grid-column-gap: 3%;
   justify-content: center;
   padding: 0.5em 0;
   -ms-align-items: center;
   align-items: center;
-  position: relative;
   cursor: pointer;
 }
 #login-container .form-container .social-login-options .social-login:first-child {
@@ -894,7 +885,7 @@ header #client-country-wrapper i[class*=caret] {
   background-color: #c7591a;
 }
 #login-container .form-container .social-login-options .social-login i {
-  padding: 0 0.2em;
+  padding: 0 0.7em;
 }
 #login-container .form-container .divide-line {
   margin: 1.5em 0;
@@ -906,7 +897,9 @@ header #client-country-wrapper i[class*=caret] {
   height: 40px;
   width: 40px;
   margin: auto;
-  background-color: #3d1053;
+  background-color: #fff;
+  color: #3d1053;
+  font-weight: 600;
   justify-content: center;
   text-align: center;
   position: absolute;

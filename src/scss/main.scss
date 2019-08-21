@@ -3,6 +3,9 @@
 @import 'partials/mixins';
 @import 'partials/utils';
 
+// Importing Font From Google Fonts CDN
+@include google-font('Montserrat');
+
 img {
     width: 100%;
 }
@@ -12,8 +15,6 @@ img {
 #wrapper {
     width: 100%;
     min-height: 100vh;
-    // background-color: $themeColor;
-    // @include background($bcg-color: rgba(25, 1, 44, 0.6), $bcg-img: url('../img/divacity-login-register-banner.jpg'));
     @include background(linear-gradient(135deg, rgba(13, 0, 0, 0.87) 40%, rgba(9, 1, 37, 0.28)), url('../src/img/divacity-login-register-banner.jpg'), $bcg-position: 0 0);
     @include background(linear-gradient(135deg, #3d1053, 40%, rgba(15, 1, 37, 0.527)), url('../src/img/divacity-login-register-banner.jpg'), $bcg-position: 0 0);
     // overflow-x: hidden;
@@ -174,7 +175,7 @@ header {
     }
 
     .form-container {
-        height: 100vh;
+        min-height: 100vh;
 
         .input-group,
         .input[type=submit] {
@@ -191,7 +192,7 @@ header {
             overflow: hidden;
 
             .tab-control {
-                padding: 0.5em 0;
+                padding: 0.5em;
                 background-color: $white;
                 color: $secondaryColor;
                 text-transform: uppercase;
@@ -208,9 +209,8 @@ header {
         }
 
         .tabs {
-            position: relative;
             .tab {
-                z-index: -1;
+                width: 100%;
                 opacity: 0;
                 display: none;
                 
@@ -226,10 +226,6 @@ header {
         }
 
         .form {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
 
             > p {
                 margin-top: 0.5em;
@@ -378,19 +374,18 @@ header {
         .social-login-options {
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 2%;
+            grid-column-gap: 1%;
 
             .social-login {
                 width: 100%;
                 padding: 0.3em;
                 text-align: center;
                 font-size: calc(0.6rem + 0.1vw);
-                grid-template-columns: 2% 96%;
-                grid-column-gap: 2%;
+                grid-template-columns: 5% 95%;
+                grid-column-gap: 3%;
                 justify-content: center;
                 padding: 0.5em 0;
                 @include alignItems(center);
-                position: relative;
                 cursor: pointer;
 
                 &:first-child {
@@ -402,7 +397,7 @@ header {
                 }
 
                 i {
-                    padding: 0 0.2em;
+                    padding: 0 0.7em;
                 }
             }
         }
@@ -415,7 +410,9 @@ header {
             p {
                 @include circle(40px);
                 margin: auto;
-                background-color: $themeColor;
+                background-color: $white;
+                color: $themeColor;
+                font-weight: 600;
                 justify-content: center;
                 text-align: center;
                 position: absolute;
